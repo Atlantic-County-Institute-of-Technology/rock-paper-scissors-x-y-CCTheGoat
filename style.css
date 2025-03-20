@@ -1,0 +1,75 @@
+body {
+    background: white;
+    color: black;
+    text-align: center;
+}
+.container {
+    height: 800px;
+    width: 700px;
+    border-radius: 25% 25% 25% 25%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border: dashed 2px black;
+    position: absolute;
+    margin-left: 600px;
+    align-self: auto;
+    align-content: center;
+}
+.board {
+    height: 775px;
+    width: 675px;
+    border-radius: 25% 25% 25% 25%;
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 70%;
+    margin-left: 13px;
+    align-self: auto;
+    align-content: center;
+}
+.button_container {
+    height: 300px;
+    width: 600px;
+    border-radius: 25% 25% 25% 25%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border: dashed 2px black;
+    margin-top: -360px;
+    margin-left: 35px;
+    align-content: center;
+}
+.button {
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    background-color: red;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 10px 0px 0px grey;
+    align-self: auto;
+    align-content: center;
+}
+.btn1 {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.btn2 {
+    background-color: orange;
+    margin-left: 230px;
+    margin-top: -117px;
+}
+.btn3 {
+    background-color: yellow;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.btn4 {
+    background-color: blue;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.btn5 {
+    background-color: purple;
+    margin-left: 25px;
+    margin-top: 25px;
+}
