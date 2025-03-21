@@ -36,7 +36,6 @@ body {
     border: dashed 2px black;
     margin-top: -360px;
     margin-left: 35px;
-    align-content: center;
 }
 .button {
     border-radius: 50%;
@@ -46,30 +45,40 @@ body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0px 10px 0px 0px grey;
-    align-self: auto;
     align-content: center;
 }
 .btn1 {
-    margin-left: 25px;
-    margin-top: 25px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -260px;
 }
 .btn2 {
     background-color: orange;
-    margin-left: 230px;
-    margin-top: -117px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -65px;
 }
 .btn3 {
     background-color: yellow;
-    margin-left: 25px;
-    margin-top: 25px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 130px;
 }
 .btn4 {
     background-color: blue;
-    margin-left: 25px;
-    margin-top: 25px;
+    position: absolute;
+    margin-top: 155px;
+    margin-left: -165px;
 }
 .btn5 {
     background-color: purple;
-    margin-left: 25px;
-    margin-top: 25px;
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 35px;
+}
+h2 {
+    position: absolute;
+    color: snow;
+    margin-top: 370px;
+    margin-left: 100px;
 }
