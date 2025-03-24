@@ -11,13 +11,18 @@
     <div class="container">
         <div class="board"> 
     <div class="button_container">
-        <button class="button btn1" id="button1"><img src="assets/rock.png" alt="rock" width="75" height="75"></button>
-        <button class="button btn2" id="button2"><img src="assets/paper.png" alt="paper" width="75" height="75"></button>
-        <button class="button btn3" id="button3"><img src="assets/scissors.png" alt="scissors" width="75" height="75"></button>
-        <button class="button btn4" id="button4"><img src="assets/paper.png" alt="paper" width="75" height="75"></button>
-        <button class="button btn5" id="button5"><img src="assets/scissors.png" alt="scissors" width="75" height="75"></button>
-        <h2>You</h2>
+        <div id="choices">
+            <button onclick="playGame('rock')"><button class="button btn1" id="button1"><img src="assets/rock.png" alt="rock" width="75" height="75"></button></button>
+            <button onclick="playGame('paper')"><button class="button btn2" id="button2"><img src="assets/paper.png" alt="paper" width="75" height="75"></button></button>
+            <button onclick="playGame('scissors')"><button class="button btn3" id="button3"><img src="assets/scissors.png" alt="scissors" width="75" height="75"></button></button>
+        </div>
     </div>
+    <div id="you"><h1>You:</h1></div>
+    <div id="vs"><h1>Vs.</h1></div>
+    <div id="computer"><h1>Computer:</h1></div>
+    <div id="result">It's a Tie</div>
+    <button class="button1" id="btn"></button>
+    <button class="button1 button2" id="btn"></button>
 </div>
 </div>
 </body>

@@ -47,6 +47,23 @@ body {
     box-shadow: 0px 10px 0px 0px grey;
     align-content: center;
 }
+.button1 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -215px;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    background-color: transparent;
+    border: dashed 2px black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
+}
+.button2 {
+    margin-top: 150px;
+    margin-left: 100px;
+}
 .btn1 {
     position: absolute;
     margin-top: 10px;
@@ -55,7 +72,7 @@ body {
 .btn2 {
     background-color: orange;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-left: -65px;
 }
 .btn3 {
@@ -76,9 +93,24 @@ body {
     margin-top: 155px;
     margin-left: 35px;
 }
-h2 {
+#you {
     position: absolute;
-    color: snow;
-    margin-top: 370px;
-    margin-left: 100px;
+    margin-top: 80px;
+    margin-left: 155px;
+}
+#vs {
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 315px;
+}
+#computer {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 430px;
+}
+#result {
+    position: absolute;
+    font-size: 3.5rem;
+    margin-top: 300px;
+    margin-left: 242px;
 }
