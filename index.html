@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Nen Rock Paper Scissors</h1>
-    <div class="container">
-        <div class="board"> 
-    <div class="button_container">
-        <div id="choices">
-            <button onclick="playGame('rock')"><button class="button btn1" id="button1"><img src="assets/rock.png" alt="rock" width="75" height="75"></button></button>
-            <button onclick="playGame('paper')"><button class="button btn2" id="button2"><img src="assets/paper.png" alt="paper" width="75" height="75"></button></button>
-            <button onclick="playGame('scissors')"><button class="button btn3" id="button3"><img src="assets/scissors.png" alt="scissors" width="75" height="75"></button></button>
+
+    <h1>Ultra Rock Paper Scissors</h1>
+
+        <div class="choices">
+            <button onclick="playGame('rock')"><img src="assets/rock.png" alt="rock" width="75" height="75"></button>
+            <button onclick="playGame('paper')"><img src="assets/paper.png" alt="paper" width="75" height="75"></button>
+            <button onclick="playGame('scissors')"><img src="assets/scissors.png" alt="scissors" width="75" height="75"></button>
         </div>
+
+    <div id="playerDisplay">You:</div>
+    <div id="computerDisplay">Computer:</div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">Your Score:
+        <span id="playerScoreDisplay">0</span>
     </div>
-    <div id="you"><h1>You:</h1></div>
-    <div id="vs"><h1>Vs.</h1></div>
-    <div id="computer"><h1>Computer:</h1></div>
-    <div id="result">It's a Tie</div>
-    <button class="button1" id="btn"></button>
-    <button class="button1 button2" id="btn"></button>
-</div>
-</div>
+
+    <div class="scoreDisplay">Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
 </body>
 <script src="script.js" ></script>
 </html>
