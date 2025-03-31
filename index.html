@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+     <!-- My heading -->
     <h1>Ultra Rock Paper Scissors</h1>
-
+     <!-- telling the html code what mychoices are and what my images for thos choices look like -->
         <div class="choices">
             <button onclick="playGame('rock')"><img src="assets/rock.png" alt="rock" width="75" height="75"></button>
             <button onclick="playGame('paper')"><img src="assets/paper.png" alt="paper" width="75" height="75"></button>
@@ -17,11 +17,11 @@
             <button onclick="playGame('coffeemaker')"><img src="assets/coffe.jpg" alt="coffeemaker" width="75" height="75"></button>
             <button onclick="playGame('inspiringcatposter')"><img src="assets/cat.png" alt="inspiringcatposter" width="75" height="75"></button>
         </div>
-
+ <!-- Sets up the display for what you and the computer choose -->
     <div id="playerDisplay">You:</div>
     <div id="computerDisplay">Computer:</div>
     <div id="resultDisplay"></div>
-
+ <!-- sets my computer/player scores to 0 -->
     <div class="scoreDisplay">Your Score:
         <span id="playerScoreDisplay">0</span>
     </div>
@@ -29,6 +29,7 @@
     <div class="scoreDisplay">Computer Score:
         <span id="computerScoreDisplay">0</span>
     </div>
+     <!-- establishing my reset button -->
     <div><button id="Reset">Reset</button></div>
 
 

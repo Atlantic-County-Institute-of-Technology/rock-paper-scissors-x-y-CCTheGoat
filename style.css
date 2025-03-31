@@ -1,3 +1,4 @@
+/* aligns everything to the center and establishes the elements of the font*/ 
 body {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -6,13 +7,16 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* cutomizes my specific h1 elements */ 
 h1 {
     font-size: 3.5rem;
     color: hsl(0, 0%, 20%);
 }
+/* puts space between the choices */ 
 .choices {
     margin-bottom: 30px;
 }
+/*decides whatthe buttons look like and how big/small they are*/ 
 .choices button{
     font-size: 7.5rem;
     min-width: 160px;
@@ -22,26 +26,32 @@ h1 {
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
+/* when you put your cursor over it allows you to see the button slightly darken*/ 
 .choices button:hover{
     background-color: hsl(200, 100%, 70%);
 }
+/* decides my font size for what the player chose and computer chose*/ 
 #playerDisplay, #computerDisplay {
     font-size: 2.5rem;
 }
+/* decides my font size for the result of who wins/loses and moves it slightly*/ 
 #resultDisplay {
     font-size: 5rem;
     margin: 30px 0;
 }
+/* decides my font size for the player score and computer score*/ 
 .scoreDisplay {
     font-size: 2rem;
     margin-top: 0px;
 }
+/* adds color to the player score and computer score as well as the result*/ 
 .greenText, #playerScoreDisplay {
     color: hsl(130, 84%, 54%);
 }
 .redText, #computerScoreDisplay {
     color: hsl(0, 84%, 60%);
 }
+/* decides what my reset button looks like*/ 
 #Reset {
     background-color: red;
     margin-top: 50px;
