@@ -1,17 +1,18 @@
 
 //tells the computer all possible choices
-const choices = ['rock', 'paper', 'scissors'];
+const choices = ['rock', 'paper', 'scissors', 'coffeemaker','inspiringcatposter'];
 const playerChoice = document.getElementById("playerChoice");
 const computerChoice = document.getElementById("computerChoice");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+const resetButton = document.getElementById("Reset");
 let playerScore = 0;
 let computerScore = 0;
 
 function playGame(playerChoice) {
 
-  const computerChoice = choices[Math.floor(Math.random() * 3)];
+  const computerChoice = choices[Math.floor(Math.random() * 5)];
   let result = "";
 
   if(playerChoice === computerChoice) {
@@ -20,13 +21,19 @@ function playGame(playerChoice) {
   else{
     switch(playerChoice){
       case "rock":
-        result = (computerChoice === "scissors") ? "You Win" : "You Lose";
+        result = (computerChoice === "scissors" || computerChoice === "inspiringcatposter") ? "You Win" : "You Lose";
         break;
       case "paper":
-        result = (computerChoice === "rock") ? "You Win" : "You Lose";
+        result = (computerChoice === "rock" || computerChoice === "inspiringcatposter") ? "You Win" : "You Lose";
         break;
       case "scissors":
-        result = (computerChoice === "paper") ? "You Win" : "You Lose";
+        result = (computerChoice === "paper" || computerChoice === "coffeemaker") ? "You Win" : "You Lose";
+        break;
+        case "coffeemaker":
+        result = (computerChoice === "paper" || computerChoice === "scissors") ? "You Win" : "You Lose";
+        break;
+      case "inspiringcatposter":
+        result = (computerChoice === "rock" || computerChoice === "coffeemaker") ? "You Win" : "You Lose";
         break;
     }
   }
@@ -49,4 +56,11 @@ function playGame(playerChoice) {
         computerScoreDisplay.textContent = computerScore;  
         break;
   }
+  function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreDisplay.textContent = 0;
+    computerScoreDisplay.textContent = 0;
+  }
+  resetButton.addEventListener("click", resetGame)
 }
